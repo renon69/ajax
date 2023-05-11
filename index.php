@@ -8,31 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
 
 </head>
-<body>
-    <div id="comments">
-    <?php
-    $sql = "SELECT * FROM comments LIMIT 2";
-    $stmt = $conn->query($sql);
-    $result = $stmt->fetchAll();
-
-    if (count($result) > 0) {
-        foreach ($result as $row) {
-
-            echo $row['author'];
-            echo '<br>';
-            echo $row['message'];
-            echo '<br>';
-            echo '<br>';
-        }
-    } else {
-        echo 'no data';
-    }
-?>
+<body class="bg-slate-400">
+    <div id="comments" class="bg-slate-300" >
+    
     </div>
-<button 
+<button id="btn"
 class="rounded-lg px-4 py-2 bg-blue-500 text-blue-100 hover:bg-blue-600 duration-300">Primary</button>
+
+<script src="ajax.js"></script>
 </body>
 </html>
 
