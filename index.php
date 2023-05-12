@@ -18,7 +18,7 @@
     </div>
 <button id="btn"
 class="rounded-lg px-4 py-2 bg-blue-500 text-blue-100 hover:bg-blue-600 duration-300">Primary</button>
-
+<p id="text"></p>
 <script src="ajax.js"></script>
 </body>
 </html>
