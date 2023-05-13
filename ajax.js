@@ -1,9 +1,11 @@
 $(document).ready(function() {
-  
-  $("#btn").click(function () {
-    $.get("docs.txt", function(data, status) {
+
+  $("input").keyup(function() {
+    var name = $("input").val();
+    $.post("suggestions.php", {
+      suggestion: name
+    }, function (data, status) {
         $("#text").html(data);
-        alert(status);
-    })
+    });
   })
 })
