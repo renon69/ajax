@@ -11,7 +11,7 @@
 <body>
     <div class="container mx-auto p-4">
         <h2 class="text-2xl font-bold mb-4">Contact Form</h2>
-        <form>
+        <form method="post">
             <div class="mb-4">
                 <label for="name" class="block mb-1">Name:</label>
                 <input type="text" id="name" name="name" class="w-full border border-gray-300 px-2 py-1">
