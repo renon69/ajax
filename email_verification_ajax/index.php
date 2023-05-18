@@ -11,7 +11,7 @@
 <body>
     <div class="container mx-auto p-4">
         <h2 class="text-2xl font-bold mb-4">Contact Form</h2>
-        <form method="post">
+        <form method="post" action="mail.php">
             <div class="mb-4">
                 <label for="name" class="block mb-1">Name:</label>
                 <input type="text" id="name" name="name" class="w-full border border-gray-300 px-2 py-1">
@@ -29,10 +29,9 @@
                 <select id="gender" name="gender" class="w-full border border-gray-300 px-2 py-1">
                     <option value="male">Male</option>
                     <option value="female">Female</option>
-                    <option value="other">Other</option>
                 </select>
             </div>
-            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Send Email</button>
+            <button type="submit" name="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Send Email</button>
         </form>
     </div>
 </body>
