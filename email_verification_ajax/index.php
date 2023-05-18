@@ -14,24 +14,27 @@
         <form method="post" action="mail.php">
             <div class="mb-4">
                 <label for="name" class="block mb-1">Name:</label>
-                <input type="text" id="name" name="name" class="w-full border border-gray-300 px-2 py-1">
+                <input type="text" id="mail-name" name="name" class="w-full border border-gray-300 px-2 py-1">
             </div>
             <div class="mb-4">
                 <label for="email" class="block mb-1">Email:</label>
-                <input type="email" id="email" name="email" class="w-full border border-gray-300 px-2 py-1">
+                <input type="email" id="mail-email" name="email" class="w-full border border-gray-300 px-2 py-1">
             </div>
             <div class="mb-4">
                 <label for="message" class="block mb-1">Message:</label>
-                <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 px-2 py-1"></textarea>
+                <textarea id="message" name="mail-message" rows="4" class="w-full border border-gray-300 px-2 py-1"></textarea>
             </div>
             <div class="mb-4">
                 <label for="gender" class="block mb-1">Gender:</label>
-                <select id="gender" name="gender" class="w-full border border-gray-300 px-2 py-1">
+                <select id="gender" name="mail-gender" class="w-full border border-gray-300 px-2 py-1">
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                 </select>
             </div>
             <button type="submit" name="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Send Email</button>
+            <p class="form-message">
+
+            </p>
         </form>
     </div>
 </body>
